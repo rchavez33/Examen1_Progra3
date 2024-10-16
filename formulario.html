@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Investigación</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form id="investigacionForm">
+        <h1>Formulario de Investigación</h1>
+
+        <label for="formNumber"># de formulario:</label>
+        <input type="text" id="formNumber" name="formNumber" readonly><br><br>
+
+        <label for="cantidadInvestigadores">Cantidad de Investigador(es):</label>
+        <input type="number" id="cantidadInvestigadores" name="cantidadInvestigadores"><br><br>
+
+        <label for="correo">Correo de contacto:</label>
+        <input type="email" id="correo" name="correo"><br><br>
+
+        <label for="fechaInicio">Fecha de Inicio:</label>
+        <input type="date" id="fechaInicio" name="fechaInicio">
+        <label for="fechaFin">Fecha Final:</label>
+        <input type="date" id="fechaFin" name="fechaFin"><br><br>
+
+        <label for="organizacion">Organización/Entidad:</label>
+        <input type="text" id="organizacion" name="organizacion"><br><br>
+
+        <label for="especie">Especie que investigan:</label>
+        <input type="text" id="especie" name="especie"><br><br>
+
+        <label for="zona">Zona de investigación (País, Estado, Área de conservación):</label>
+        <input type="text" id="zona" name="zona"><br><br>
+
+        <label for="estacion">Estación climática:</label>
+        <select id="estacion" name="estacion">
+            <option value="verano">Verano</option>
+            <option value="otoño">Otoño</option>
+            <option value="invierno">Invierno</option>
+            <option value="primavera">Primavera</option>
+        </select><br><br>
+
+        <label for="especimenes">Cantidad de especímenes observados:</label>
+        <input type="number" id="especimenes" name="especimenes"><br><br>
+
+        <label for="adultos">Adultos (hembras y machos):</label>
+        <input type="number" id="adultos" name="adultos"><br><br>
+
+        <label for="crias">Crías:</label>
+        <input type="number" id="crias" name="crias"><br><br>
+
+        <label for="horaCaza">Hora en la que cazaban:</label>
+        <input type="time" id="horaCaza" name="horaCaza"><br><br>
+
+        <label for="horaDormir">Hora en la que dormían:</label>
+        <input type="time" id="horaDormir" name="horaDormir"><br><br>
+
+        <label for="horaMigracion">Hora en la que se movían/migraban (si aplicable):</label>
+        <input type="time" id="horaMigracion" name="horaMigracion"><br><br>
+
+        <h2>Consultas Adicionales:</h2>
+
+        <label for="guardabosques">¿Se observaron guardabosques en la zona?</label>
+        <select id="guardabosques" name="guardabosques">
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="armados">¿Estaban armados (si aplicable)?</label>
+        <select id="armados" name="armados">
+            <option value="si">Sí</option>
+            <option value="na">N/A</option>
+        </select><br><br>
+
+        <label for="cazadores">¿Se observaron cazadores furtivos?</label>
+        <select id="cazadores" name="cazadores">
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <button type="button" id="guardarBtn">Guardar y Enviar</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
